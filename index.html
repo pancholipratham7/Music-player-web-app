@@ -11,33 +11,37 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
       <div class="top-bar">
-        <span class="material-icons">expand_more</span>
+        <i class="material-icons">expand_more</i>
         <span class="now-playing">Now Playing</span>
-        <span class="material-icons">more_horiz</span>
+        <i class="material-icons">more_horiz</i>
       </div>
-      <div class="image">
-        <img class="song-image" src="images/music-1.jpg" alt="" />
+      <div class="image-area">
+        <img class="song-image" src="images/music-5.jpg" alt="" />
       </div>
       <div class="song-details">
-        <h3 class="song-name">Jim-Sun Goes Down</h3>
+        <p class="song-name">Jim-Sun Goes Down</p>
         <p class="artist">Jim Yosef x Roy</p>
       </div>
-      <div class="progress-bar-section"></div>
+      <div class="progress-area">
+        <div class="progress-bar"></div>
+        <div class="timer">
+          <span class="start-time">0:12</span>
+          <span class="end-time">3:20</span>
+        </div>
+      </div>
       <div class="song-control-options">
-        <span class="material-icons md-18"> shuffle </span>
-        <span class="material-icons md-24"> skip_previous </span>
-        <span class="material-icons md-36"> play_circle_filled </span>
-        <span class="material-icons md-48"> skip_next </span>
-        <span class="material-icons md-64"> queue_music </span>
+        <i class="material-icons md-18"> shuffle </i>
+        <i class="material-icons md-24"> skip_previous </i>
+        <div class="play-pause-button">
+          <i class="material-icons md-36">pause</i>
+        </div>
+        <i class="material-icons md-48"> skip_next </i>
+        <i class="material-icons md-64"> queue_music </i>
       </div>
     </div>
   </body>

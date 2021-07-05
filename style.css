@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 1rem;
 }
@@ -15,36 +25,46 @@ body {
 }
 .wrapper {
   padding-top: 1rem;
-  padding-bottom: 1rem;
-  width: 85%;
+  padding-bottom: 0rem;
+  width: 86%;
   height: 70%;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-radius: 0.62rem;
+  border-radius: 0.9rem;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
 }
+
+.wrapper i {
+  cursor: pointer;
+}
+
 .top-bar {
   display: flex;
   width: 86%;
+  font-size: 1rem;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-.image {
+.image-area {
   width: 86%;
   height: 40%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.9rem;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }
 .song-image {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 7%;
-  object-fit: contain;
+  border-radius: 0.9rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .song-details {
   width: 86%;
@@ -58,44 +78,124 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 }
+
 .now-playing {
   color: #474444;
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  letter-spacing: 0.06rem;
 }
 .song-name {
   color: #2c2929;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
+  font-size: 21px;
 }
 .artist {
-  margin-top: 1rem;
+  margin-top: 0rem;
   color: #645757;
-  font-family: "Montserrat", sans-serif;
-  font-weight: light;
+  font-size: 18px;
+  opacity: 0.9;
 }
 .material-icons.md-18 {
   font-size: 1.87rem;
   color: #ff69b4;
 }
 .material-icons.md-24 {
-  font-size: 1.87rem;
+  font-size: 2.7rem;
   color: #ff69b4;
+}
+.play-pause-button::before {
+  content: "";
+  height: 43px;
+  width: 43px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #cc2b5e 0%, #753a88 100%);
+  position: absolute;
 }
 .material-icons.md-36 {
-  font-size: 1.87rem;
-  border-radius: 100%;
-  border: solid rgb(247, 242, 243) 10px;
-  box-shadow: 0 5px 20px 3px rgba(194, 184, 184, 0.6);
-  box-sizing: border-box;
-  color: #ff69b4;
+  color: white;
+  height: 43px;
+  width: 43px;
+  background: linear-gradient(90deg, #cc2b5e 0%, #753a88 100%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 43px;
+  background-clip: text;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-background-fill-color: transparent;
 }
 .material-icons.md-48 {
-  font-size: 1.87rem;
+  font-size: 2.7rem;
   color: #ff69b4;
 }
 .material-icons.md-64 {
   font-size: 1.87rem;
   color: #ff69b4;
+}
+
+.material-icons {
+  user-select: none;
+  font-size: 28px;
+}
+.song-control-options i:nth-child(2),
+.song-control-options i:nth-child(4) {
+  font-size: 43px;
+}
+
+.song-control-options i {
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.play-pause-button {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ffffff 0%, #cecaca 100%);
+  box-shadow: 0px 0px 5px #ff69b4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+}
+.timer span {
+  font-weight: lighter;
+}
+
+.progress-area {
+  width: 86%;
+  height: 6px;
+  border-radius: 50px;
+  background-color: rgb(179, 177, 177);
+  cursor: pointer;
+}
+.progress-area .progress-bar {
+  height: inherit;
+  background: linear-gradient(90deg, #e61d8c 0%, #ff69b4 100%);
+  position: relative;
+  width: 50%;
+  border-radius: inherit;
+}
+.progress-bar::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: inherit;
+  background: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
 }
