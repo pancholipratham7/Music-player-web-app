@@ -11,7 +11,7 @@ const nextBtn = document.querySelector("#next");
 
 //State object will store the state of the application
 const state = {
-  musicIndex: 2,
+  musicIndex: 6,
   songState: "pause",
 };
 
@@ -47,7 +47,9 @@ playPause.addEventListener("click", playAndPause);
 
 //Function for playing next music
 const nextMusic = function () {
-  state.musicIndex = state.musicIndex + 1;
+  state.musicIndex === 6
+    ? (state.musicIndex = 1)
+    : (state.musicIndex = state.musicIndex + 1);
   state.songState = "pause";
   loadMusic(state.musicIndex);
   playAndPause();
@@ -55,7 +57,9 @@ const nextMusic = function () {
 
 //Function for playing previous music
 const prevMusic = function () {
-  state.musicIndex = state.musicIndex - 1;
+  state.musicIndex === 1
+    ? (state.musicIndex = 6)
+    : (state.musicIndex = state.musicIndex - 1);
   state.songState = "pause";
   loadMusic(state.musicIndex);
   playAndPause();
