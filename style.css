@@ -36,6 +36,7 @@ body {
   border-radius: 0.9rem;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
   position: relative;
+  overflow: hidden;
 }
 
 .wrapper i {
@@ -214,18 +215,43 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 40%;
-  height: 60%;
-  overflow: scroll;
-  overflow-x: hidden;
+  bottom: 0;
+  left: 0;
   display: flex;
+  bottom: -55%;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
+  transition: all 0.14s ease-out;
 }
+
+/* This class we will add through javascript */
+.music-list.show {
+  bottom: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.music-list ul {
+  max-height: 260px;
+  overflow-y: auto;
+}
+.music-list ul::-webkit-scrollbar {
+  width: 0;
+}
+
+.music-list ul li {
+  cursor: pointer;
+}
+.music-list .playlist-song-artist {
+  opacity: 0.9;
+}
+
 .song-list-area {
   width: 86%;
   margin: 0 auto;
   margin-bottom: 15px;
-  color: rgb(129, 126, 126);
+  color: rgb(56, 55, 55);
   font-size: 15px;
 }
 
@@ -234,7 +260,9 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(223, 215, 215);
+  cursor: pointer;
 }
+
 .playlist-song-detail {
   display: flex;
   flex-direction: column;
@@ -256,8 +284,4 @@ body {
 .playlist-icon,
 .playlist-close {
   font-size: 20px;
-}
-
-.hidden {
-  display: none;
 }

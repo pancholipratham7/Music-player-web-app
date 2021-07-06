@@ -21,11 +21,11 @@
         <i class="material-icons">more_horiz</i>
       </div>
       <div class="image-area">
-        <img class="song-image" src="images/music-3.jpg" alt="" />
+        <img class="song-image" src="" alt="" />
       </div>
       <div class="song-details">
-        <p class="song-name">Jim-Sun Goes Down</p>
-        <p class="artist">Jim Yosef x Roy</p>
+        <p class="song-name"></p>
+        <p class="artist"></p>
       </div>
       <div class="progress-area">
         <div class="progress-bar"></div>
@@ -33,17 +33,18 @@
           <span class="start-time">0:12</span>
           <span class="end-time">3:20</span>
         </div>
+        <audio id="main-audio" src=""></audio>
       </div>
       <div class="song-control-options">
         <i class="material-icons md-18"> shuffle </i>
-        <i class="material-icons md-24"> skip_previous </i>
+        <i id="prev" class="material-icons md-24"> skip_previous </i>
         <div class="play-pause-button">
-          <i class="material-icons md-36">pause</i>
+          <i class="material-icons md-36 play-pause-icon">play_arrow</i>
         </div>
-        <i class="material-icons md-48"> skip_next </i>
+        <i id="next" class="material-icons md-48"> skip_next </i>
         <i class="material-icons md-64 playlist-button"> queue_music </i>
       </div>
-      <div class="music-list hidden">
+      <div class="music-list">
         <div class="playlist-top-bar">
           <div class="p">
             <i class="material-icons playlist-icon"> queue_music</i>
@@ -109,10 +110,46 @@
               </div>
               <span class="playlist-song-length">3:36</span>
             </li>
+            <li class="playlist-details">
+              <div class="playlist-song-detail">
+                <p class="playlist-song-name">Hardwind - Want Me</p>
+                <p class="playlist-song-artist">Mike Archangelo</p>
+              </div>
+              <span class="playlist-song-length">3:36</span>
+            </li>
+            <li class="playlist-details">
+              <div class="playlist-song-detail">
+                <p class="playlist-song-name">Hardwind - Want Me</p>
+                <p class="playlist-song-artist">Mike Archangelo</p>
+              </div>
+              <span class="playlist-song-length">3:36</span>
+            </li>
+            <li class="playlist-details">
+              <div class="playlist-song-detail">
+                <p class="playlist-song-name">Hardwind - Want Me</p>
+                <p class="playlist-song-artist">Mike Archangelo</p>
+              </div>
+              <span class="playlist-song-length">3:36</span>
+            </li>
+            <li class="playlist-details">
+              <div class="playlist-song-detail">
+                <p class="playlist-song-name">Beauz & Jvna</p>
+                <p class="playlist-song-artist">Beauz & Jvna</p>
+              </div>
+              <span class="playlist-song-length">3:36</span>
+            </li>
+            <li class="playlist-details">
+              <div class="playlist-song-detail">
+                <p class="playlist-song-name">Beauz & Jvna</p>
+                <p class="playlist-song-artist">Beauz & Jvna</p>
+              </div>
+              <span class="playlist-song-length">3:36</span>
+            </li>
           </ul>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
