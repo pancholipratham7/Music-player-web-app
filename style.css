@@ -35,6 +35,7 @@ body {
   align-items: center;
   border-radius: 0.9rem;
   box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 
 .wrapper i {
@@ -82,9 +83,7 @@ body {
 }
 
 .now-playing {
-  color: #474444;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.06rem;
+  color: #807676;
 }
 .song-name {
   color: #2c2929;
@@ -198,4 +197,67 @@ body {
 
 .progress-area:hover .progress-bar::before {
   opacity: 1;
+}
+
+.playlist-top-bar {
+  flex-grow: 0.4;
+  margin: 0 auto;
+  width: 86%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.music-list {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 40%;
+  height: 60%;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.song-list-area {
+  width: 86%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: rgb(129, 126, 126);
+  font-size: 15px;
+}
+
+.playlist-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(223, 215, 215);
+}
+.playlist-song-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.playlist-top-bar-heading {
+  font-size: 15px;
+}
+.p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 0.03;
+}
+.playlist-icon,
+.playlist-close {
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
 }
