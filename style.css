@@ -179,7 +179,7 @@ body {
   height: inherit;
   background: linear-gradient(90deg, #e61d8c 0%, #ff69b4 100%);
   position: relative;
-  width: 50%;
+  width: 0%;
   border-radius: inherit;
 }
 .progress-bar::before {
