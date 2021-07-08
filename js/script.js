@@ -20,7 +20,7 @@ const playList = document.querySelector(".playlist");
 
 //State object will store the state of the application
 const state = {
-  musicIndex: 4,
+  musicIndex: 1,
   songState: "pause",
 };
 

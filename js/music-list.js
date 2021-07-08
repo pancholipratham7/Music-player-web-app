@@ -1,17 +1,18 @@
 let allMusic = [
   {
-    name: "Harley Bird - Home",
-    artist: "Jordan Schor",
+    name: "Beautiful Mistakes",
+    artist: "Maroon 5",
     img: "music-1",
     src: "music-1",
-    totalDuration: "3:36",
+    totalDuration: "3:37",
   },
+
   {
-    name: "Ikson Anywhere – Ikson",
-    artist: "Audio Library",
+    name: "Runaway",
+    artist: "Aurora Aksnes",
     img: "music-2",
     src: "music-2",
-    totalDuration: "3:05",
+    totalDuration: "4:09",
   },
   {
     name: "Beauz & Jvna - Crazy",
@@ -21,24 +22,25 @@ let allMusic = [
     totalDuration: "3:08",
   },
   {
-    name: "Hardwind - Want Me",
-    artist: "Mike Archangelo",
+    name: "Tum Ho",
+    artist: "Mohit Chauhan",
     img: "music-4",
     src: "music-4",
-    totalDuration: "3:48",
+    totalDuration: "5:18",
   },
   {
-    name: "Jim - Sun Goes Down",
-    artist: "Jim Yosef x Roy",
+    name: "Tum Se Hi",
+    artist: "Mohit Chauhan",
     img: "music-5",
     src: "music-5",
-    totalDuration: "2:48",
+    totalDuration: "5:39",
   },
+
   {
-    name: "Lost Sky - Vision NCS",
-    artist: "NCS Release",
+    name: "Kun Faya - Rockstar",
+    artist: "Mohit Chauhan",
     img: "music-6",
     src: "music-6",
-    totalDuration: "3:54",
+    totalDuration: "7:52",
   },
 ];
