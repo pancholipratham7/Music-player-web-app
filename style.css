@@ -285,3 +285,6 @@ body {
 .playlist-close {
   font-size: 20px;
 }
+.song-playing {
+  color: rgb(255, 109, 248);
+}
